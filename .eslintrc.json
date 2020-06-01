@@ -1,0 +1,32 @@
+{
+  "extends": [
+    "eslint:recommended",
+    "prettier",
+    "prettier/react",
+    "plugin:import/errors",
+    "plugin:react/recommended"
+  ],
+  "rules": {
+    //0 = turn off, 1 = warn, 2 = error
+    "react/prop-types": 0,
+    "no-console": 1
+  },
+  "plugins": ["react", "import"],
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "env": {
+    "es6": true,
+    "browser": true,
+    "node": true
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  }
+}
