@@ -76,9 +76,7 @@ const useStyles = makeStyles((theme) => ({
     borderRadius: "20px",
   },
   linkHover: {
-    "&:hover": {
-      color: theme.palette.common.green,
-    },
+    ...theme.textLinkTransition,
   },
 }));
 
