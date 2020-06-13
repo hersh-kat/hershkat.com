@@ -5,6 +5,7 @@ import Header from "./ui/Header";
 import Hero from "./ui/Hero";
 import AboutMe from "./ui/AboutMe";
 import Education from "./ui/Education";
+import Employment from "./ui/Employment";
 import Footer from "./ui/Footer";
 import theme from "./ui/Theme";
 
@@ -16,6 +17,7 @@ function App() {
         <Hero />
         <AboutMe />
         <Education />
+        <Employment />
         <Footer />
       </MainContainer>
     </ThemeProvider>

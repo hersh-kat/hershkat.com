@@ -4,12 +4,19 @@ import { makeStyles } from "@material-ui/core/styles";
 import Tabs from "@material-ui/core/Tabs";
 import Tab from "@material-ui/core/Tab";
 import TabsContentHolder from "./TabsContentHolder";
-import { uniData, aLevelData, gcseData } from "../../data/educationData";
 import Typography from "@material-ui/core/Typography";
 import Grid from "@material-ui/core/Grid";
 import useMediaQuery from "@material-ui/core/useMediaQuery";
 import { useTheme } from "@material-ui/core/styles";
-import SchoolIcon from "@material-ui/icons/School";
+import WorkIcon from "@material-ui/icons/Work";
+import {
+  kcsoc,
+  creditSights,
+  justEat,
+  healthShared,
+  thinkOutLoud,
+  exploreLearning,
+} from "../../data/employmentData";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -96,10 +103,10 @@ export default function VerticalTabs() {
         className={classes.headerStyle}
       >
         <Grid item>
-          <SchoolIcon fontSize="small" />
+          <WorkIcon fontSize="small" />
         </Grid>
         <Grid item>
-          <Typography variant="h2">Education</Typography>
+          <Typography variant="h2">Employment</Typography>
         </Grid>
       </Grid>
       <Grid
@@ -117,20 +124,32 @@ export default function VerticalTabs() {
             aria-label="Vertical tabs example"
             className={classes.tabs}
           >
-            <Tab label="University" {...a11yProps(0)} />
-            <Tab label="A-Level" {...a11yProps(1)} />
-            <Tab label="GCSE" {...a11yProps(2)} />
+            <Tab label="KCSOC" {...a11yProps(0)} />
+            <Tab label="CreditSights" {...a11yProps(1)} />
+            <Tab label="Health Shared" {...a11yProps(2)} />
+            <Tab label="Just Eat" {...a11yProps(2)} />
+            <Tab label="Think Out Loud UK" {...a11yProps(3)} />
+            <Tab label="Explore Learning" {...a11yProps(4)} />
           </Tabs>
         </Grid>
         <Grid item xs>
           <TabPanel value={value} index={0}>
-            <TabsContentHolder {...uniData} columns />
+            <TabsContentHolder {...kcsoc} />
           </TabPanel>
           <TabPanel value={value} index={1}>
-            <TabsContentHolder {...aLevelData} columns />
+            <TabsContentHolder {...creditSights} />
           </TabPanel>
           <TabPanel value={value} index={2}>
-            <TabsContentHolder {...gcseData} columns />
+            <TabsContentHolder {...healthShared} />
+          </TabPanel>
+          <TabPanel value={value} index={3}>
+            <TabsContentHolder {...justEat} />
+          </TabPanel>
+          <TabPanel value={value} index={4}>
+            <TabsContentHolder {...thinkOutLoud} />
+          </TabPanel>
+          <TabPanel value={value} index={5}>
+            <TabsContentHolder {...exploreLearning} />
           </TabPanel>
         </Grid>
       </Grid>

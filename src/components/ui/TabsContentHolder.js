@@ -69,9 +69,17 @@ export default function EducationContentHolder({
           </Typography>
           <ul className={columns ? classes.ulColumns : classes.ul}>
             {results &&
+              columns &&
               Object.entries(results).map(([key, value]) => (
                 <li className={classes.li} key={key}>
                   {key}: {value}
+                </li>
+              ))}
+            {results &&
+              !columns &&
+              Object.entries(results).map(([key, value]) => (
+                <li className={classes.li} key={key}>
+                  {value}
                 </li>
               ))}
           </ul>
