@@ -9,7 +9,6 @@ import GithubIcon from "../../assets/github";
 import InstagramIcon from "../../assets/instagram";
 import LinkedInIcon from "../../assets/linkedin";
 import SpotifyIcon from "../../assets/spotify";
-import { StylesContext } from "@material-ui/styles";
 
 const useStyles = makeStyles((theme) => ({
   sectionStyle: {

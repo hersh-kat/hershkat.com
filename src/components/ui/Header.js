@@ -54,7 +54,7 @@ const useStyles = makeStyles((theme) => ({
   link: {
     display: "flex",
     textTransform: "uppercase",
-    fontWeight: 500,
+    fontWeight: 700,
     fontSize: "0.8rem",
     letterSpacing: "0.1rem",
   },
