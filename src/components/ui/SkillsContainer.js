@@ -8,7 +8,6 @@ import "../../css/animatedBorder.css";
 const useStyles = makeStyles((theme) => ({
   root: {
     width: "350px",
-    border: "1px solid rgba(128, 128, 128, 0.4)",
     animationName: "fadeIn",
     animationDelay: "0.1s",
     color: "rgb(221,221,221)",
@@ -16,13 +15,25 @@ const useStyles = makeStyles((theme) => ({
     marginBottom: "10px",
     marginTop: "10px",
     padding: "5px",
-    "&:hover": {
-      borderColor: "rgba(128, 128, 128)",
+    backgroundColor: "rgb(23,41, 69)",
+    "vertical-align": "middle",
+    "-webkit-transform": "perspective(1px) translateZ(0)",
+    transform: "perspective(1px) translateZ(0)",
+    "box-shadow": "0 0 1px rgba(0, 0, 0, 0)",
+    "-webkit-transition-duration": "0.3s",
+    "transition-duration": "0.3s",
+    "-webkit-transition-property": "transform",
+    "transition-property": "transform",
+    "-webkit-transition-timing-function": "ease-out",
+    "transition-timing-function": "ease-out",
+    "&:hover, &:focus, &:active": {
+      "-webkit-transform": "translateY(-3px)",
+      transform: "translateY(-3px)",
     },
   },
   chip: {
     color: theme.palette.secondary.main,
-    opacity: 0.7,
+    opacity: 0.8,
     border: `1px solid ${theme.palette.secondary.main}`,
   },
 }));
