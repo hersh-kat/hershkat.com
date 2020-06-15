@@ -12,7 +12,7 @@ const useStyles = makeStyles((theme) => ({
       paddingBottom: "50px",
     },
     paddingTop: "150px",
-    paddingBottom: "150px",
+    paddingBottom: "100px",
   },
   headerStyle: {
     ...theme.headerTransition,

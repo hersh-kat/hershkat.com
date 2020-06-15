@@ -20,11 +20,10 @@ import {
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
-
+  const classes = makeStyles();
   return (
     <Grid
       item
-      style={{ paddingLeft: "30px" }}
       xs
       role="tabpanel"
       hidden={value !== index}
@@ -54,7 +53,7 @@ const useStyles = makeStyles((theme) => ({
   root: {
     display: "flex",
     flexGrow: 1,
-    height: 224,
+    height: "370px",
     margin: "auto",
     [theme.breakpoints.down("sm")]: {
       height: "auto",
@@ -64,14 +63,22 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down("sm")]: {
       paddingTop: "50px",
       paddingBottom: "50px",
+      width: "auto",
     },
-    paddingTop: "150px",
-    paddingBottom: "150px",
+    paddingTop: "100px",
+    paddingBottom: "100px",
     width: "800px",
     margin: "auto",
+    flexGrow: 1,
   },
   tabs: {
     borderRight: `1px solid ${theme.palette.divider}`,
+    [theme.breakpoints.up("md")]: {
+      marginRight: "45px",
+    },
+    [theme.breakpoints.down("sm")]: {
+      marginBottom: "30px",
+    },
   },
   headerStyle: {
     paddingBottom: "10px",
@@ -112,7 +119,6 @@ export default function VerticalTabs() {
       <Grid
         container
         direction={matches ? "column" : "row"}
-        spacing={5}
         className={classes.root}
       >
         <Grid item>

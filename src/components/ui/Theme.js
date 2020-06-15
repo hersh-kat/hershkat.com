@@ -45,6 +45,11 @@ export default createMuiTheme({
       fontSize: "1.2rem",
       fontWeight: 700,
     },
+    h4: {
+      display: "flex",
+      fontWeight: 700,
+      fontSize: "1.0rem",
+    },
     ul: {
       padding: 0,
       margin: 0,

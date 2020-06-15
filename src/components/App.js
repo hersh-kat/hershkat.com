@@ -8,6 +8,7 @@ import Education from "./ui/Education";
 import Employment from "./ui/Employment";
 import Footer from "./ui/Footer";
 import theme from "./ui/Theme";
+import Skills from "./ui/Skills";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <AboutMe />
         <Education />
         <Employment />
+        <Skills />
         <Footer />
       </MainContainer>
     </ThemeProvider>

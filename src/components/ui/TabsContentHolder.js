@@ -63,7 +63,7 @@ export default function EducationContentHolder({
         </Grid>
       </Grid>
       <Grid container>
-        <Grid item>
+        <Grid item xs>
           <Typography style={{ textDecoration: "bold", paddingBottom: "10px" }}>
             {resultsName}
           </Typography>
