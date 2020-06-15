@@ -4,6 +4,7 @@ import EmojiEmotionsIcon from "@material-ui/icons/EmojiEmotions";
 import { Typography } from "@material-ui/core";
 import bitmoji from "../../assets/bitmoji.svg";
 import { makeStyles } from "@material-ui/styles";
+import ScrollableAnchor from "react-scrollable-anchor";
 
 const useStyles = makeStyles((theme) => ({
   sectionStyle: {
@@ -24,20 +25,22 @@ export default function AboutMe(props) {
   return (
     <section className={classes.sectionStyle}>
       <Grid container direction="column" spacing={2}>
-        <Grid
-          container
-          item
-          direction="row"
-          spacing={1}
-          className={classes.headerStyle}
-        >
-          <Grid item>
-            <EmojiEmotionsIcon fontSize="small" />
+        <ScrollableAnchor id={"about"}>
+          <Grid
+            container
+            item
+            direction="row"
+            spacing={1}
+            className={classes.headerStyle}
+          >
+            <Grid item>
+              <EmojiEmotionsIcon fontSize="small" />
+            </Grid>
+            <Grid item>
+              <Typography variant="h2">About Me</Typography>
+            </Grid>
           </Grid>
-          <Grid item>
-            <Typography variant="h2">About Me</Typography>
-          </Grid>
-        </Grid>
+        </ScrollableAnchor>
 
         <Grid container item direction="row">
           <Grid item xs={12} md={8}>

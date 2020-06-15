@@ -9,6 +9,8 @@ import GithubIcon from "../../assets/github";
 import InstagramIcon from "../../assets/instagram";
 import LinkedInIcon from "../../assets/linkedin";
 import SpotifyIcon from "../../assets/spotify";
+import ScrollableAnchor from "react-scrollable-anchor";
+import Link from "@material-ui/core/Link";
 
 const useStyles = makeStyles((theme) => ({
   sectionStyle: {
@@ -82,11 +84,13 @@ export default function Hero() {
   return (
     <section className={classes.sectionStyle}>
       <Grid container {...outerContainerProps}>
-        <Grid container item {...imageContainerProps}>
-          <Grid item>
-            <img src={me} />
+        <ScrollableAnchor id={"hero"}>
+          <Grid container item {...imageContainerProps}>
+            <Grid item>
+              <img src={me} />
+            </Grid>
           </Grid>
-        </Grid>
+        </ScrollableAnchor>
         <Grid container item {...textContainerProps}>
           <Grid item>
             <img src={nameImage} />
@@ -101,16 +105,34 @@ export default function Hero() {
             </Typography>
           </Grid>
           <Grid container item {...iconContainerProps}>
-            <Grid item>
+            <Grid
+              item
+              onClick={() => window.open("https://github.com/hersh-kat")}
+            >
               <GithubIcon className={classes.githubIcon} />
             </Grid>
-            <Grid item>
+            <Grid
+              item
+              onClick={() =>
+                window.open("https://linkedin.com/in/hersh-kataria")
+              }
+            >
               <LinkedInIcon className={classes.linkedinIcon} />
             </Grid>
-            <Grid item>
+            <Grid
+              item
+              onClick={() => window.open("https://instagram.com/hershkat")}
+            >
               <InstagramIcon className={classes.instagramIcon} />
             </Grid>
-            <Grid item>
+            <Grid
+              item
+              onClick={() =>
+                window.open(
+                  "https://open.spotify.com/playlist/1o5z5yBncFvtPHjKI6QXOQ"
+                )
+              }
+            >
               <SpotifyIcon className={classes.spotifyIcon} />
             </Grid>
           </Grid>

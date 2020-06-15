@@ -9,6 +9,7 @@ import Employment from "./ui/Employment";
 import Footer from "./ui/Footer";
 import theme from "./ui/Theme";
 import Skills from "./ui/Skills";
+import Projects from "./ui/Projects";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Education />
         <Employment />
         <Skills />
+        <Projects />
         <Footer />
       </MainContainer>
     </ThemeProvider>

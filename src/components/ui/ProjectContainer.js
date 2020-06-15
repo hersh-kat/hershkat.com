@@ -2,12 +2,15 @@ import React from "react";
 import Typography from "@material-ui/core/Typography";
 import Grid from "@material-ui/core/Grid";
 import Chip from "@material-ui/core/Chip";
+import Link from "@material-ui/core/Link";
 import { makeStyles } from "@material-ui/core/styles";
-import "../../css/animatedBorder.css";
+import GitHubIcon from "@material-ui/icons/GitHub";
+import LaunchIcon from "@material-ui/icons/Launch";
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    width: "350px",
+    width: "400px",
+    height: "300px",
     animationName: "fadeIn",
     animationDelay: "0.1s",
     color: "rgb(221,221,221)",
@@ -35,33 +38,62 @@ const useStyles = makeStyles((theme) => ({
     color: theme.palette.secondary.main,
     border: `1px solid ${theme.palette.secondary.main}`,
   },
+  linkHover: {
+    color: "white",
+    ...theme.textLinkTransition,
+  },
 }));
 
-export default function SkillsContainer({ icon, title, skills }) {
+export default function ProjectContainer({
+  title,
+  icon,
+  githublink,
+  weblink,
+  summary,
+  tags,
+}) {
   const classes = useStyles();
 
   return (
-    <Grid
-      className={classes.root}
-      container
-      direction="row"
-      spacing={2}
-      alignItems="center"
-    >
-      <Grid item>
-        <img src={icon}></img>
-      </Grid>
-      <Grid item container direction="column" spacing={1} xs>
+    <Grid container direction="column" spacing={2} className={classes.root}>
+      <Grid item container direction="row" className="row1">
         <Grid item>
-          <Typography variant="h4">{title}</Typography>
+          <img src={icon} />
         </Grid>
-        <Grid item container direction="row" spacing={1}>
-          {skills.map((skill) => (
+        <Grid item container xs direction="row" spacing={2} justify="flex-end">
+          <Grid hidden={githublink ? false : true} item>
+            <Link className={classes.linkHover} href={githublink}>
+              <GitHubIcon />
+            </Link>
+          </Grid>
+          <Grid hidden={weblink ? false : true} item>
+            <Link className={classes.linkHover} href={weblink}>
+              <LaunchIcon />
+            </Link>
+          </Grid>
+        </Grid>
+      </Grid>
+      <Grid item container direction="column" spacing={1}>
+        <Grid item>
+          <Typography variant="h3">{title}</Typography>
+        </Grid>
+        <Grid item>
+          <Typography>{summary}</Typography>
+        </Grid>
+      </Grid>
+      <Grid
+        item
+        container
+        direction="row"
+        spacing={2}
+        style={{ marginTop: "auto" }}
+      >
+        {tags &&
+          tags.map((skill) => (
             <Grid key={skill} item>
               <Chip variant="outlined" className={classes.chip} label={skill} />
             </Grid>
           ))}
-        </Grid>
       </Grid>
     </Grid>
   );

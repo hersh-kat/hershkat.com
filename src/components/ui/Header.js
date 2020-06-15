@@ -16,18 +16,7 @@ import IconButton from "@material-ui/core/IconButton";
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 import ListItemText from "@material-ui/core/ListItemText";
-
-function ElevationScroll(props) {
-  const { children } = props;
-  const trigger = useScrollTrigger({
-    disableHysteresis: true,
-    threshold: 0,
-  });
-
-  return React.cloneElement(children, {
-    elevation: trigger ? 4 : 0,
-  });
-}
+import { configureAnchors } from "react-scrollable-anchor";
 
 function HideOnScroll(props) {
   const { children } = props;
@@ -40,10 +29,6 @@ function HideOnScroll(props) {
   );
 }
 
-function handleClick(event) {
-  event.preventDefault();
-  console.info("You clicked a breadcrumb.");
-}
 const useStyles = makeStyles((theme) => ({
   toolbarMargin: {
     ...theme.mixins.toolbar,
@@ -87,9 +72,15 @@ export default function Header(props) {
   const matches = useMediaQuery(theme.breakpoints.down("sm"));
   const iOS = process.browser && /iPad|iPhone|iPod/.test(navigator.userAgent);
   const [openDrawer, setOpenDrawer] = useState(false);
+  configureAnchors({ offset: -theme.mixins.toolbar.minHeight - 10 });
 
   const cvButton = (
-    <Button className={classes.button} variant="outlined" color="secondary">
+    <Button
+      href="/cv"
+      className={classes.button}
+      variant="outlined"
+      color="secondary"
+    >
       CV
     </Button>
   );
@@ -106,7 +97,13 @@ export default function Header(props) {
       >
         <List component="nav">
           {pageNames.map((page) => (
-            <ListItem onClick={() => setOpenDrawer(false)} key={page} button>
+            <ListItem
+              onClick={() => setOpenDrawer(false)}
+              key={page}
+              button
+              component="a"
+              href={"#" + page.toLowerCase()}
+            >
               <ListItemText className={classes.link}>{page}</ListItemText>
             </ListItem>
           ))}
@@ -124,7 +121,6 @@ export default function Header(props) {
 
   const linkProps = {
     color: "textPrimary",
-    href: "/",
     className: classes.link,
     classes: {
       underlineHover: classes.linkHover,
@@ -141,7 +137,7 @@ export default function Header(props) {
         aria-label="breadcrumb"
       >
         {pageNames.map((page) => (
-          <Link key={page} {...linkProps}>
+          <Link key={page} href={"#" + page.toLowerCase()} {...linkProps}>
             {page}
           </Link>
         ))}

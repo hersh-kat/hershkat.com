@@ -9,6 +9,8 @@ import Grid from "@material-ui/core/Grid";
 import useMediaQuery from "@material-ui/core/useMediaQuery";
 import { useTheme } from "@material-ui/core/styles";
 import WorkIcon from "@material-ui/icons/Work";
+import ScrollableAnchor from "react-scrollable-anchor";
+
 import {
   kcsoc,
   creditSights,
@@ -103,19 +105,21 @@ export default function VerticalTabs() {
 
   return (
     <section className={classes.sectionStyle}>
-      <Grid
-        container
-        direction="row"
-        spacing={1}
-        className={classes.headerStyle}
-      >
-        <Grid item>
-          <WorkIcon fontSize="small" />
+      <ScrollableAnchor id={"work"}>
+        <Grid
+          container
+          direction="row"
+          spacing={1}
+          className={classes.headerStyle}
+        >
+          <Grid item>
+            <WorkIcon fontSize="small" />
+          </Grid>
+          <Grid item>
+            <Typography variant="h2">Employment</Typography>
+          </Grid>
         </Grid>
-        <Grid item>
-          <Typography variant="h2">Employment</Typography>
-        </Grid>
-      </Grid>
+      </ScrollableAnchor>
       <Grid
         container
         direction={matches ? "column" : "row"}

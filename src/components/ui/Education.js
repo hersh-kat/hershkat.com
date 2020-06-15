@@ -10,6 +10,7 @@ import Grid from "@material-ui/core/Grid";
 import useMediaQuery from "@material-ui/core/useMediaQuery";
 import { useTheme } from "@material-ui/core/styles";
 import SchoolIcon from "@material-ui/icons/School";
+import ScrollableAnchor from "react-scrollable-anchor";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -95,19 +96,21 @@ export default function VerticalTabs() {
 
   return (
     <section className={classes.sectionStyle}>
-      <Grid
-        container
-        direction="row"
-        spacing={1}
-        className={classes.headerStyle}
-      >
-        <Grid item>
-          <SchoolIcon fontSize="small" />
+      <ScrollableAnchor id={"education"}>
+        <Grid
+          container
+          direction="row"
+          spacing={1}
+          className={classes.headerStyle}
+        >
+          <Grid item>
+            <SchoolIcon fontSize="small" />
+          </Grid>
+          <Grid item>
+            <Typography variant="h2">Education</Typography>
+          </Grid>
         </Grid>
-        <Grid item>
-          <Typography variant="h2">Education</Typography>
-        </Grid>
-      </Grid>
+      </ScrollableAnchor>
       <Grid
         container
         direction={matches ? "column" : "row"}
