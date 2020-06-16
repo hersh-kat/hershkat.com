@@ -18,7 +18,7 @@ export const projectsData = [
   },
 
   {
-    title: "Coming soon...",
+    title: "Also coming soon...",
     icon: question,
     summary: "More projects coming soon!",
   },

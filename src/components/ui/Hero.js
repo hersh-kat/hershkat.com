@@ -10,7 +10,6 @@ import InstagramIcon from "../../assets/instagram";
 import LinkedInIcon from "../../assets/linkedin";
 import SpotifyIcon from "../../assets/spotify";
 import ScrollableAnchor from "react-scrollable-anchor";
-import Link from "@material-ui/core/Link";
 
 const useStyles = makeStyles((theme) => ({
   sectionStyle: {

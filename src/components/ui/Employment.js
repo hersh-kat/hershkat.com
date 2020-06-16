@@ -22,7 +22,6 @@ import {
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
-  const classes = makeStyles();
   return (
     <Grid
       item

@@ -1,7 +1,6 @@
 import { createMuiTheme } from "@material-ui/core/styles";
 
 const darkNavyBlue = "#0a192f";
-const black = "#1f1c1c";
 const turquoise = "#4becff";
 const textLight = "#fff";
 

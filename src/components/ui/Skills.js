@@ -52,7 +52,7 @@ export default function Skills() {
         alignItems="center"
       >
         {skillsData.map(({ icon, title, skills }) => (
-          <Grid item key={title} md={4} xs={12} className={classes.skillsStyle}>
+          <Grid item key={title} lg={4} md={6} xs={12}>
             <SkillsContainer icon={icon} title={title} skills={skills} />
           </Grid>
         ))}

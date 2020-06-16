@@ -5,6 +5,7 @@ import { Typography } from "@material-ui/core";
 import bitmoji from "../../assets/bitmoji.svg";
 import { makeStyles } from "@material-ui/styles";
 import ScrollableAnchor from "react-scrollable-anchor";
+import { aboutMeText } from "../../data/aboutMeText";
 
 const useStyles = makeStyles((theme) => ({
   sectionStyle: {
@@ -20,7 +21,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function AboutMe(props) {
+export default function AboutMe() {
   const classes = useStyles();
   return (
     <section className={classes.sectionStyle}>
@@ -45,28 +46,19 @@ export default function AboutMe(props) {
         <Grid container item direction="row">
           <Grid item xs={12} md={8}>
             <Typography>
-              I'm baby gastropub umami distillery direct trade tumblr brunch +1
-              chartreuse woke man braid beard wolf palo santo. Pork belly twee
-              taiyaki umami marfa, vexillologist chillwave post-ironic af 8-bit
-              drinking vinegar vegan artisan. Tumblr lo-fi authentic freegan,
-              disrupt cloud bread ennui meditation food truck keytar fanny pack
-              man braid. Single-origin coffee pop-up ethical drinking vinegar
-              banh mi bitters venmo meh. Prism hammock dreamcatcher mumblecore
-              post-ironic YOLO lumbersexual activated charcoal. Dreamcatcher
-              fashion axe hoodie PBR&B plaid direct trade sartorial occupy
-              kinfolk. <br /> <br />
-              Typewriter church-key woke squid, selvage mustache kombucha four
-              loko gastropub asymmetrical craft beer coloring book fanny pack.
-              Cardigan jianbing glossier kogi, jean shorts biodiesel ethical
-              subway tile. Cold-pressed coloring book snackwave, before they
-              sold out raw denim kale chips adaptogen. Glossier chia vaporware
-              palo santo 90's raclette, tilde irony quinoa. Enamel pin
-              microdosing tilde, lo-fi brunch aesthetic tofu la croix iceland
-              synth wolf knausgaard. Taiyaki taxidermy letterpress
-              intelligentsia helvetica. Keytar edison bulb fingerstache umami
-              readymade letterpress brooklyn tattooed iPhone yr man bun
-              williamsburg biodiesel seitan banjo. Ethical gastropub la croix
-              organic woke iceland meggings selvage.
+              Hi there! 👋🏼
+              <br />
+              I’m Hersh, a Software Engineer based in London with a passion for
+              everything tech. After graduating from the University of Warwick
+              in Computer Systems Engineering, I decided to take a unique path
+              by working as the National President of KCSOC for a year. I’m now
+              looking to work for an exciting, vibrant technology company where
+              I can channel my leadership, creativity and technical skills that
+              I have developed over the years.
+              <br />
+              <br />I created this website to showcase my experience, skills and
+              various technical projects. If you’d like to get in touch with me
+              via email, feel free to hit the button below.
             </Typography>
           </Grid>
           <Grid item xs={12} md={4}>
