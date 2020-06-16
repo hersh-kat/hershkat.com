@@ -78,7 +78,7 @@ export default function ProjectContainer({
           <Typography variant="h3">{title}</Typography>
         </Grid>
         <Grid item>
-          <Typography>{summary}</Typography>
+          <Typography variant="body2">{summary}</Typography>
         </Grid>
       </Grid>
       <Grid

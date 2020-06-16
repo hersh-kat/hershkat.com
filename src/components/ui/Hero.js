@@ -10,15 +10,40 @@ import InstagramIcon from "../../assets/instagram";
 import LinkedInIcon from "../../assets/linkedin";
 import SpotifyIcon from "../../assets/spotify";
 import ScrollableAnchor from "react-scrollable-anchor";
+import TypeAnimation from "../TypeAnimation";
+import ArrowDropDownCircleOutlinedIcon from "@material-ui/icons/ArrowDropDownCircleOutlined";
+import Link from "@material-ui/core/Link";
 
 const useStyles = makeStyles((theme) => ({
   sectionStyle: {
     [theme.breakpoints.down("sm")]: {
-      paddingTop: "50px",
+      paddingTop: "0px",
       paddingBottom: "50px",
     },
     paddingTop: "150px",
-    paddingBottom: "150px",
+    minHeight: "100vh",
+  },
+  typeAnimationStyle: {
+    fontSize: "1.6em",
+    [theme.breakpoints.down("sm")]: {
+      fontSize: "1.4em",
+    },
+  },
+  imageStyle: {
+    [theme.breakpoints.down("sm")]: {
+      width: "90%",
+      height: "90%",
+      margin: "auto",
+      display: "block",
+    },
+  },
+  heroImageStyle: {
+    [theme.breakpoints.down("sm")]: {
+      width: "80%",
+      height: "80%",
+      margin: "auto",
+      display: "block",
+    },
   },
   spotifyIcon: {
     color: "#1ED760",
@@ -34,6 +59,10 @@ const useStyles = makeStyles((theme) => ({
   linkedinIcon: {
     color: "#0077B5",
     ...theme.iconLinkTransition,
+  },
+  iconTransition: {
+    color: "white",
+    ...theme.textLinkTransition,
   },
 }));
 
@@ -72,71 +101,85 @@ export default function Hero() {
     outerContainerProps.direction = "column";
     outerContainerProps.spacing = 5;
     textContainerProps.alignItems = "center";
+    textContainerProps.spacing = 3;
     iconContainerProps.justify = "center";
   } else {
     outerContainerProps.direction = "row";
     outerContainerProps.spacing = 10;
     textContainerProps.alignItems = "flex-start";
+    textContainerProps.spacing = 7;
     iconContainerProps.justify = "flex-start";
   }
 
   return (
     <section className={classes.sectionStyle}>
-      <Grid container {...outerContainerProps}>
-        <ScrollableAnchor id={"hero"}>
-          <Grid container item {...imageContainerProps}>
+      <Grid container direction="column" alignItems="center">
+        <Grid
+          container
+          item
+          {...outerContainerProps}
+          style={{ marginTop: "auto" }}
+        >
+          <ScrollableAnchor id={"hero"}>
+            <Grid container item {...imageContainerProps}>
+              <Grid item>
+                <img src={me} className={classes.heroImageStyle} />
+              </Grid>
+            </Grid>
+          </ScrollableAnchor>
+          <Grid container item {...textContainerProps}>
             <Grid item>
-              <img src={me} />
+              <img className={classes.imageStyle} src={nameImage} />
             </Grid>
-          </Grid>
-        </ScrollableAnchor>
-        <Grid container item {...textContainerProps}>
-          <Grid item>
-            <img src={nameImage} />
-          </Grid>
-          <Grid item>
-            <Typography>
-              Skateboard vinyl sustainable, waistcoat enamel pin echo park lo-fi
-              biodiesel cardigan. Semiotics offal quinoa sriracha. XOXO roof
-              party sartorial chambray craft beer green juice lumbersexual. Put
-              a bird on it mumblecore echo park hella offal YOLO yr trust fund
-              keytar slow-carb bushwick ennui typewriter hell of copper mug.
-            </Typography>
-          </Grid>
-          <Grid container item {...iconContainerProps}>
-            <Grid
-              item
-              onClick={() => window.open("https://github.com/hersh-kat")}
-            >
-              <GithubIcon className={classes.githubIcon} />
+            <Grid item>
+              <Typography className={classes.typeAnimationStyle}>
+                <TypeAnimation
+                  strings={[
+                    "Designer. ^1000 Developer. ^1000 Self-Starter. ^1000 Creator. ",
+                  ]}
+                />
+              </Typography>
             </Grid>
-            <Grid
-              item
-              onClick={() =>
-                window.open("https://linkedin.com/in/hersh-kataria")
-              }
-            >
-              <LinkedInIcon className={classes.linkedinIcon} />
-            </Grid>
-            <Grid
-              item
-              onClick={() => window.open("https://instagram.com/hershkat")}
-            >
-              <InstagramIcon className={classes.instagramIcon} />
-            </Grid>
-            <Grid
-              item
-              onClick={() =>
-                window.open(
-                  "https://open.spotify.com/playlist/1o5z5yBncFvtPHjKI6QXOQ"
-                )
-              }
-            >
-              <SpotifyIcon className={classes.spotifyIcon} />
+            <Grid container item {...iconContainerProps}>
+              <Grid
+                item
+                onClick={() => window.open("https://github.com/hersh-kat")}
+              >
+                <GithubIcon className={classes.githubIcon} />
+              </Grid>
+              <Grid
+                item
+                onClick={() =>
+                  window.open("https://linkedin.com/in/hersh-kataria")
+                }
+              >
+                <LinkedInIcon className={classes.linkedinIcon} />
+              </Grid>
+              <Grid
+                item
+                onClick={() => window.open("https://instagram.com/hershkat")}
+              >
+                <InstagramIcon className={classes.instagramIcon} />
+              </Grid>
+              <Grid
+                item
+                onClick={() =>
+                  window.open(
+                    "https://open.spotify.com/playlist/1o5z5yBncFvtPHjKI6QXOQ"
+                  )
+                }
+              >
+                <SpotifyIcon className={classes.spotifyIcon} />
+              </Grid>
             </Grid>
           </Grid>
         </Grid>
-      </Grid>{" "}
+        <Grid item style={{ paddingTop: "5em" }}>
+          <Link href="#about" className={classes.iconTransition}>
+            <ArrowDropDownCircleOutlinedIcon style={{ fontSize: 30 }} />
+          </Link>
+        </Grid>
+      </Grid>
     </section>
   );
 }

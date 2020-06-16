@@ -103,8 +103,9 @@ export default function Header(props) {
               button
               component="a"
               href={"#" + page.toLowerCase()}
+              className={classes.link}
             >
-              <ListItemText className={classes.link}>{page}</ListItemText>
+              <ListItemText disableTypography>{page}</ListItemText>
             </ListItem>
           ))}
           {cvButton}

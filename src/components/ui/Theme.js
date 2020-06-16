@@ -37,7 +37,7 @@ export default createMuiTheme({
     },
     h2: {
       textTransform: "uppercase",
-      fontSize: "1.2rem",
+      fontSize: "1.3rem",
       fontWeight: 700,
     },
     h3: {
@@ -64,6 +64,20 @@ export default createMuiTheme({
         left: 0,
         color: turquoise,
       },
+    },
+    body2: {
+      fontFamily: ["Fira Sans", "sans-serif"].join(","),
+      fontWeight: 400,
+      fontSize: "1rem",
+      lineHeight: 1.5,
+      letterSpacing: "0.00938em",
+    },
+    body1: {
+      fontFamily: ["Fira Sans", "sans-serif"].join(","),
+      fontWeight: 400,
+      fontSize: "1.2rem",
+      lineHeight: 1.5,
+      letterSpacing: "0.00938em",
     },
   },
   spacing: 8,

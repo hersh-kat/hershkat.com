@@ -55,16 +55,19 @@ export default function EducationContentHolder({
             <Typography variant="h3">{title}</Typography>
           </Grid>
           <Grid item>
-            <Typography>{subtitle1}</Typography>
+            <Typography variant="body2">{subtitle1}</Typography>
           </Grid>
           <Grid item>
-            <Typography>{subtitle2}</Typography>
+            <Typography variant="body2">{subtitle2}</Typography>
           </Grid>
         </Grid>
       </Grid>
       <Grid container>
         <Grid item xs>
-          <Typography style={{ textDecoration: "bold", paddingBottom: "10px" }}>
+          <Typography
+            variant="body2"
+            style={{ fontWeight: 500, paddingBottom: "10px" }}
+          >
             {resultsName}
           </Typography>
           <ul className={columns ? classes.ulColumns : classes.ul}>
