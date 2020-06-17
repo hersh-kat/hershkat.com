@@ -153,31 +153,25 @@ export default function Hero() {
             <Grid container item {...iconContainerProps}>
               <Grid
                 item
-                onClick={() => window.open("https://github.com/hersh-kat")}
+                onClick={() => window.open("https://bit.ly/hershgithub")}
               >
                 <GithubIcon className={classes.githubIcon} />
               </Grid>
               <Grid
                 item
-                onClick={() =>
-                  window.open("https://linkedin.com/in/hersh-kataria")
-                }
+                onClick={() => window.open("https://bit.ly/hershlinkedin")}
               >
                 <LinkedInIcon className={classes.linkedinIcon} />
               </Grid>
               <Grid
                 item
-                onClick={() => window.open("https://instagram.com/hershkat")}
+                onClick={() => window.open("https://bit.ly/hershinsta")}
               >
                 <InstagramIcon className={classes.instagramIcon} />
               </Grid>
               <Grid
                 item
-                onClick={() =>
-                  window.open(
-                    "https://open.spotify.com/playlist/1o5z5yBncFvtPHjKI6QXOQ"
-                  )
-                }
+                onClick={() => window.open("https://bit.ly/hershkcsoc")}
               >
                 <SpotifyIcon className={classes.spotifyIcon} />
               </Grid>
