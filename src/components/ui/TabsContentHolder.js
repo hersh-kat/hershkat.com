@@ -15,6 +15,7 @@ const useStyles = makeStyles((theme) => ({
   ulColumns: {
     columns: 2,
     ...theme.typography.ul,
+    fontSize: "0.9rem",
   },
   ul: {
     ...theme.typography.ul,
