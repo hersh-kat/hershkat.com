@@ -8,10 +8,10 @@ export const uniData = {
   subtitle2: "2016 - 2019",
   resultsName: "Key Modules",
   results: {
-    Algorithms: "90%",
-    "Web Development": "85%",
-    Mathematics: "100%",
-    "Computer Science": "92%",
+    "Digital Systems Design": "100%",
+    "Mathematical Computing": "91%",
+    "Design of Information Structures": "82%",
+    "Web Applications Development": "76%",
   },
 };
 
