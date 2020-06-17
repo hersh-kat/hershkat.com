@@ -13,7 +13,9 @@ const useStyles = makeStyles((theme) => ({
     color: theme.palette.text.secondary,
   },
   ulColumns: {
-    columns: 2,
+    [theme.breakpoints.up("md")]: {
+      columns: 2,
+    },
     ...theme.typography.ul,
     fontSize: "0.9rem",
   },
