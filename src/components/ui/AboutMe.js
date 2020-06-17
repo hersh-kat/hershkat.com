@@ -56,9 +56,8 @@ export default function AboutMe() {
                 <br />
                 I’m Hersh, a Software Engineer based in London with a passion
                 for everything tech. After graduating from the University of
-                Warwick, After graduating from the University of Warwick, I did
-                something a bit different to the typical Computer Science
-                graduate and worked as the National President of{" "}
+                Warwick, I did something a bit different to the typical Computer
+                Science graduate and worked as the National President of{" "}
                 <Link color="secondary" href="https://kcsoc.com">
                   KCSOC
                 </Link>{" "}
