@@ -17,6 +17,7 @@ import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 import ListItemText from "@material-ui/core/ListItemText";
 import { configureAnchors } from "react-scrollable-anchor";
+import pdf from "../../assets/cv.pdf";
 
 function HideOnScroll(props) {
   const { children } = props;
@@ -76,7 +77,7 @@ export default function Header(props) {
 
   const cvButton = (
     <Button
-      href="/cv"
+      href={pdf}
       className={classes.button}
       variant="outlined"
       color="secondary"
