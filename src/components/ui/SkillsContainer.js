@@ -3,7 +3,6 @@ import Typography from "@material-ui/core/Typography";
 import Grid from "@material-ui/core/Grid";
 import Chip from "@material-ui/core/Chip";
 import { makeStyles } from "@material-ui/core/styles";
-import "../../css/animatedBorder.css";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -49,7 +48,7 @@ export default function SkillsContainer({ icon, title, skills }) {
       alignItems="center"
     >
       <Grid item>
-        <img src={icon}></img>
+        <img alt="skill logo" src={icon}></img>
       </Grid>
       <Grid item container direction="column" spacing={1} xs>
         <Grid item>

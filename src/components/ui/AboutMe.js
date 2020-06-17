@@ -1,7 +1,7 @@
 import React from "react";
 import Grid from "@material-ui/core/Grid";
 import EmojiEmotionsIcon from "@material-ui/icons/EmojiEmotions";
-import { Typography } from "@material-ui/core";
+import { Typography, Link } from "@material-ui/core";
 import bitmoji from "../../assets/bitmoji.svg";
 import { makeStyles } from "@material-ui/styles";
 import Button from "@material-ui/core/Button";
@@ -47,13 +47,20 @@ export default function AboutMe() {
           <Grid item container direction="column" spacing={2} xs={12} md={8}>
             <Grid item>
               <Typography>
-                Hi there! 👋🏼
+                Hi there!{" "}
+                <span role="img" aria-label="wave">
+                  {" "}
+                  👋🏼
+                </span>
                 <br />
                 I’m Hersh, a Software Engineer based in London with a passion
                 for everything tech. After graduating from the University of
                 Warwick in Computer Systems Engineering, I decided to take a
-                unique path by working as the National President of KCSOC for a
-                year. I’m now looking to work for an exciting, vibrant
+                unique path by working as the National President of{" "}
+                <Link color="secondary" href="https://kcsoc.com">
+                  KCSOC
+                </Link>{" "}
+                for a year. I’m now looking to work for an exciting, vibrant
                 technology company where I can channel my leadership, creativity
                 and technical skills that I have developed over the years.
                 <br />
@@ -73,7 +80,7 @@ export default function AboutMe() {
             </Grid>
           </Grid>
           <Grid item xs={12} md={4}>
-            <img src={bitmoji} />
+            <img alt="bitmoji" src={bitmoji} />
           </Grid>
         </Grid>
       </Grid>

@@ -24,9 +24,11 @@ const useStyles = makeStyles((theme) => ({
     minHeight: "100vh",
   },
   typeAnimationStyle: {
-    fontSize: "1.6em",
+    fontSize: "1.5em",
+    fontFamily: "Fira Code",
+    textAlign: "start",
     [theme.breakpoints.down("sm")]: {
-      fontSize: "1.4em",
+      fontSize: "1.2em",
     },
   },
   imageStyle: {
@@ -123,19 +125,27 @@ export default function Hero() {
           <ScrollableAnchor id={"hero"}>
             <Grid container item {...imageContainerProps}>
               <Grid item>
-                <img src={me} className={classes.heroImageStyle} />
+                <img
+                  src={me}
+                  alt="Hersh Kataria"
+                  className={classes.heroImageStyle}
+                />
               </Grid>
             </Grid>
           </ScrollableAnchor>
           <Grid container item {...textContainerProps}>
             <Grid item>
-              <img className={classes.imageStyle} src={nameImage} />
+              <img
+                alt="Name Text Watercolour"
+                className={classes.imageStyle}
+                src={nameImage}
+              />
             </Grid>
             <Grid item>
               <Typography className={classes.typeAnimationStyle}>
                 <TypeAnimation
                   strings={[
-                    "Designer. ^1000 Developer. ^1000 Self-Starter. ^1000 Creator. ",
+                    "Designer. ^1000 Developer.\n^1000Self-Starter. ^1000 Creator.",
                   ]}
                 />
               </Typography>

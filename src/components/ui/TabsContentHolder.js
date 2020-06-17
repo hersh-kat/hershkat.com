@@ -48,7 +48,7 @@ export default function EducationContentHolder({
         style={{ paddingBottom: "10px" }}
       >
         <Grid item>
-          <img style={{ margin: "auto" }} src={logo} />
+          <img alt="company logo" style={{ margin: "auto" }} src={logo} />
         </Grid>
         <Grid item container direction="column" xs>
           <Grid item>

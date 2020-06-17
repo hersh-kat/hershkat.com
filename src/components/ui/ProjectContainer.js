@@ -58,7 +58,7 @@ export default function ProjectContainer({
     <Grid container direction="column" spacing={2} className={classes.root}>
       <Grid item container direction="row" className="row1">
         <Grid item>
-          <img src={icon} />
+          <img alt="Project icon" src={icon} />
         </Grid>
         <Grid item container xs direction="row" spacing={2} justify="flex-end">
           <Grid hidden={githublink ? false : true} item>
