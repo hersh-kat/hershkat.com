@@ -12,6 +12,10 @@ https://hershkat.com
 
 ## Screenshots
 
+| Landing                              | Education & Employment               | Skills & Projects                    |
+| ------------------------------------ | ------------------------------------ | ------------------------------------ |
+| ![](https://i.imgur.com/rk3glYC.png) | ![](https://i.imgur.com/NwmkObK.png) | ![](https://i.imgur.com/oTkFMkA.png) |
+
 ## Building from source
 
 If you want to build and run this project from source, you can download this repo and use these commands in the working directory:
