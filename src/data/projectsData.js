@@ -12,14 +12,29 @@ export const projectsData = [
   },
 
   {
-    title: "Coming soon...",
-    icon: question,
-    summary: "More projects coming soon!",
+    title: "KCSOC Studio",
+    icon: weblogo,
+    summary:
+      "Automatically generate beautiful, high-quality posters and videos for your local KCSOC in just a few clicks.",
+    tags: ["React.js", "Material-UI"],
+    githublink: "https://github.com/hersh-kat/kcsoc-studio",
   },
 
   {
-    title: "Also coming soon...",
-    icon: question,
-    summary: "More projects coming soon!",
+    title: "InstaLytics",
+    icon: weblogo,
+    summary:
+      "Interactive analytics dashboard that calculates & displays Instagram metrics for your Instagram business account",
+    tags: ["Vue.js", "Express.js"],
+    githublink: "https://github.com/hersh-kat/insta-lytics",
+  },
+
+  {
+    title: "IntelliQuote",
+    icon: weblogo,
+    summary:
+      "An intelligent, A.I graphic design tool that generates beautiful graphics with quotes.",
+    tags: ["Vue.js", "Express.js"],
+    githublink: "https://github.com/hersh-kat/intelli-quote",
   },
 ];

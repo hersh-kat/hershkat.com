@@ -15,7 +15,7 @@ export const skillsData = [
   {
     icon: react,
     title: "Front-End Frameworks",
-    skills: ["React.js", "Material-UI"],
+    skills: ["React.js", "Vue.js", "Material-UI"],
   },
 
   {

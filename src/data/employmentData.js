@@ -21,17 +21,17 @@ export const kcsoc = {
 export const creditSights = {
   logo: creditSightsLogo,
   title: "CreditSights",
-  subtitle1: "Junior Data Scientist",
+  subtitle1: "Software Engineer",
   subtitle2: "Aug 2018 - Sept 2018",
   results: {
-    1: "Utilised Python data analysis and visualisation tools to create a bespoke application which calculated revenue information given user-defined requirements and data. Worked closely with the company’s CFO, who was the main user of the application.",
+    1: "Utilised Python data analysis and visualisation tools to create a bespoke application, built using Flask, which calculated revenue information given user-defined requirements and data. Worked closely with the company’s CFO, who was the main user of the application.",
   },
 };
 
 export const healthShared = {
   logo: healthSharedLogo,
   title: "Health Shared",
-  subtitle1: "Web Applications Developer",
+  subtitle1: "Software Engineer Intern",
   subtitle2: "Jun 2018 - Jul 2019",
   results: {
     1: "Collaborated with a team of web developers in a healthcare start-up to implement a responsive web application.",
