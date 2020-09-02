@@ -8,6 +8,7 @@ import nameImage from "../../assets/HershKataria.svg";
 import GithubIcon from "../../assets/github";
 import InstagramIcon from "../../assets/instagram";
 import LinkedInIcon from "../../assets/linkedin";
+import PhotoshopIcon from "../../assets/photoshop";
 import SpotifyIcon from "../../assets/spotify";
 import ScrollableAnchor from "react-scrollable-anchor";
 import TypeAnimation from "../TypeAnimation";
@@ -56,6 +57,10 @@ const useStyles = makeStyles((theme) => ({
   },
   instagramIcon: {
     color: "#E4405F",
+    ...theme.iconLinkTransition,
+  },
+  photoshopIcon: {
+    color: "#31A8FF",
     ...theme.iconLinkTransition,
   },
   linkedinIcon: {
@@ -156,6 +161,16 @@ export default function Hero() {
                 onClick={() => window.open("https://bit.ly/hershgithub")}
               >
                 <GithubIcon className={classes.githubIcon} />
+              </Grid>
+              <Grid
+                item
+                onClick={() =>
+                  window.open(
+                    "https://drive.google.com/drive/u/0/folders/1WxsdRD-v_xLnVuL5CEceTiIoFuW6Fl1r"
+                  )
+                }
+              >
+                <PhotoshopIcon className={classes.photoshopIcon} />
               </Grid>
               <Grid
                 item
