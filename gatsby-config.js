@@ -11,5 +11,13 @@ module.exports = {
     siteUrl: `https://www.hershkat.com`,
     description: `Welcome to my home on the internet, where you can get to know who I am and what I do!`,
   },
-  plugins: [],
+  plugins: [
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [`Fira Sans:300,400,500,600,700`],
+        display: "swap",
+      },
+    },
+  ],
 };
