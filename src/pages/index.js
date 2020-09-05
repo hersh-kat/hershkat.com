@@ -1,5 +1,6 @@
-import React from "react"
+import React from "react";
+import App from "../components/App";
 
-export default function Home() {
-  return <div>Hello world!</div>
+export default function IndexPage() {
+  return <App />;
 }
