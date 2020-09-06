@@ -15,8 +15,24 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
-        fonts: [`Fira Sans:300,400,500,600,700`],
+        fonts: [`Fira Sans:300,400,500,600,700`, `Fira Code:300,400,500`],
         display: "swap",
+      },
+    },
+    `gatsby-transformer-remark`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `markdown`,
+        path: `src/data/`,
+      },
+    },
+    `gatsby-transformer-json`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `data`,
+        path: `src/data/`,
       },
     },
   ],
