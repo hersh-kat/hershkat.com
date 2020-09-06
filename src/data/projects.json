@@ -1,0 +1,30 @@
+[
+  {
+    "title": "hershkat.com",
+    "icon": "../assets/weblogo.svg",
+    "summary": "My personal portfolio website. This website displays my CV in an interactive, styled manner and showcases my various Computer Science projects that I have completed.",
+    "tags": ["Gatsby", "React", "GraphQL"],
+    "githublink": "https://github.com/hersh-kat/hershkat.com"
+  },
+  {
+    "title": "KCSOC Studio",
+    "icon": "../assets/weblogo.svg",
+    "summary": "Automatically generate beautiful, high-quality posters and videos for your local KCSOC in just a few clicks.",
+    "tags": ["React", "Material-UI"],
+    "githublink": "https://github.com/hersh-kat/kcsoc-studio"
+  },
+  {
+    "title": "InstaLytics",
+    "icon": "../assets/weblogo.svg",
+    "summary": "Interactive analytics dashboard that calculates & displays Instagram metrics for your Instagram business account",
+    "tags": ["Vue.js", "Express", "Instagram Graph API"],
+    "githublink": "https://github.com/hersh-kat/insta-lytics"
+  },
+  {
+    "title": "IntelliQuote",
+    "icon": "../assets/weblogo.svg",
+    "summary": "An intelligent graphic design tool that generates beautiful graphics with quotes, using image recognition.",
+    "tags": ["Vue.js", "Express"],
+    "githublink": "https://github.com/hersh-kat/intelli-quote"
+  }
+]
