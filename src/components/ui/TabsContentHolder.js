@@ -31,14 +31,13 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 export default function EducationContentHolder({
-  logo,
   title,
   subtitle1,
   subtitle2,
   resultsName,
   results,
   columns,
-  gatsbyImageComponent,
+  imgComponent,
 }) {
   const classes = useStyles();
 
@@ -51,7 +50,7 @@ export default function EducationContentHolder({
         alignItems="center"
         style={{ paddingBottom: "10px" }}
       >
-        <Grid item>{gatsbyImageComponent}</Grid>
+        <Grid item>{imgComponent}</Grid>
         <Grid item container direction="column" xs>
           <Grid item>
             <Typography variant="h3">{title}</Typography>
@@ -85,14 +84,11 @@ export default function EducationContentHolder({
               })}
             {results &&
               !columns &&
-              results.map((string) => {
-                const res = string.split(",");
-                return (
-                  <li className={classes.li} key={res[0]}>
-                    {res[0]}: {res[1]}
-                  </li>
-                );
-              })}
+              results.map((string, index) => (
+                <li className={classes.li} key={index}>
+                  {string}
+                </li>
+              ))}
           </ul>
         </Grid>
       </Grid>

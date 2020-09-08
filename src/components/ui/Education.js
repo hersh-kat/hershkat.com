@@ -156,7 +156,7 @@ export default function VerticalTabs() {
             <TabPanel key={index} value={value} index={index}>
               <TabsContentHolder
                 {...node}
-                gatsbyImageComponent={
+                imgComponent={
                   <img src={node.logo.publicURL} style={{ margin: "auto" }} />
                 }
                 columns

@@ -10,6 +10,7 @@ import useMediaQuery from "@material-ui/core/useMediaQuery";
 import { useTheme } from "@material-ui/core/styles";
 import WorkIcon from "@material-ui/icons/Work";
 import ScrollableAnchor from "react-scrollable-anchor";
+import { graphql, useStaticQuery } from "gatsby";
 
 import {
   kcsoc,
@@ -102,6 +103,25 @@ export default function VerticalTabs() {
     setValue(newValue);
   };
 
+  const data = useStaticQuery(graphql`
+    {
+      allEmploymentJson {
+        edges {
+          node {
+            id
+            logo {
+              publicURL
+            }
+            title
+            subtitle1
+            subtitle2
+            results
+          }
+        }
+      }
+    }
+  `);
+
   return (
     <section className={classes.sectionStyle}>
       <ScrollableAnchor id={"work"}>
@@ -133,33 +153,22 @@ export default function VerticalTabs() {
             aria-label="Vertical tabs example"
             className={classes.tabs}
           >
-            <Tab label="KCSOC" {...a11yProps(0)} />
-            <Tab label="CreditSights" {...a11yProps(1)} />
-            <Tab label="Health Shared" {...a11yProps(2)} />
-            <Tab label="Just Eat" {...a11yProps(2)} />
-            <Tab label="Think Out Loud UK" {...a11yProps(3)} />
-            <Tab label="Explore Learning" {...a11yProps(4)} />
+            {data.allEmploymentJson.edges.map(({ node }, index) => (
+              <Tab label={node.title} key={index} {...a11yProps(0)} />
+            ))}
           </Tabs>
         </Grid>
         <Grid item xs>
-          <TabPanel value={value} index={0}>
-            <TabsContentHolder {...kcsoc} />
-          </TabPanel>
-          <TabPanel value={value} index={1}>
-            <TabsContentHolder {...creditSights} />
-          </TabPanel>
-          <TabPanel value={value} index={2}>
-            <TabsContentHolder {...healthShared} />
-          </TabPanel>
-          <TabPanel value={value} index={3}>
-            <TabsContentHolder {...justEat} />
-          </TabPanel>
-          <TabPanel value={value} index={4}>
-            <TabsContentHolder {...thinkOutLoud} />
-          </TabPanel>
-          <TabPanel value={value} index={5}>
-            <TabsContentHolder {...exploreLearning} />
-          </TabPanel>
+          {data.allEmploymentJson.edges.map(({ node }, index) => (
+            <TabPanel key={index} value={value} index={index}>
+              <TabsContentHolder
+                {...node}
+                imgComponent={
+                  <img src={node.logo.publicURL} style={{ margin: "auto" }} />
+                }
+              />
+            </TabPanel>
+          ))}
         </Grid>
       </Grid>
     </section>
