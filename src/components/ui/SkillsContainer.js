@@ -38,7 +38,6 @@ const useStyles = makeStyles((theme) => ({
 
 export default function SkillsContainer({ icon, title, skills }) {
   const classes = useStyles();
-
   return (
     <Grid
       className={classes.root}

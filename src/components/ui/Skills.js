@@ -3,11 +3,11 @@ import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
 import CodeIcon from "@material-ui/icons/Code";
-import { skillsData } from "../../data/skillsData";
 import SkillsContainer from "./SkillsContainer";
 import useMediaQuery from "@material-ui/core/useMediaQuery";
 import { useTheme } from "@material-ui/styles";
 import ScrollableAnchor from "react-scrollable-anchor";
+import { graphql, useStaticQuery } from "gatsby";
 
 const useStyles = makeStyles((theme) => ({
   sectionStyle: {
@@ -28,6 +28,23 @@ export default function Skills() {
   const classes = useStyles();
   const theme = useTheme();
   const matches = useMediaQuery(theme.breakpoints.down("sm"));
+
+  const data = useStaticQuery(graphql`
+    {
+      allSkillsJson {
+        edges {
+          node {
+            id
+            icon {
+              publicURL
+            }
+            title
+            skills
+          }
+        }
+      }
+    }
+  `);
 
   return (
     <section className={classes.sectionStyle}>
@@ -51,9 +68,13 @@ export default function Skills() {
         direction={matches ? "column" : "row"}
         alignItems="center"
       >
-        {skillsData.map(({ icon, title, skills }) => (
-          <Grid item key={title} lg={4} md={6} xs={12}>
-            <SkillsContainer icon={icon} title={title} skills={skills} />
+        {data.allSkillsJson.edges.map(({ node }) => (
+          <Grid item key={node.title} lg={4} md={6} xs={12}>
+            <SkillsContainer
+              icon={node.icon.publicURL}
+              title={node.title}
+              skills={node.skills}
+            />
           </Grid>
         ))}
       </Grid>

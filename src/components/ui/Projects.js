@@ -8,6 +8,7 @@ import { projectsData } from "../../data/projectsData";
 import useMediaQuery from "@material-ui/core/useMediaQuery";
 import { useTheme } from "@material-ui/styles";
 import ScrollableAnchor from "react-scrollable-anchor";
+import { graphql, useStaticQuery } from "gatsby";
 
 const useStyles = makeStyles((theme) => ({
   sectionStyle: {
@@ -28,7 +29,24 @@ export default function Projects() {
   const classes = useStyles();
   const theme = useTheme();
   const matches = useMediaQuery(theme.breakpoints.down("sm"));
-
+  const data = useStaticQuery(graphql`
+    {
+      allProjectsJson {
+        edges {
+          node {
+            id
+            icon {
+              publicURL
+            }
+            title
+            summary
+            tags
+            githublink
+          }
+        }
+      }
+    }
+  `);
   return (
     <section className={classes.sectionStyle}>
       <ScrollableAnchor id="projects">
@@ -51,26 +69,24 @@ export default function Projects() {
         direction={matches ? "column" : "row"}
         alignItems="center"
       >
-        {projectsData.map(
-          ({ title, icon, summary, githublink, weblink, tags }) => (
-            <Grid
-              item
-              key={title}
-              md={4}
-              xs={12}
-              className={classes.skillsStyle}
-            >
-              <ProjectsContainer
-                title={title}
-                icon={icon}
-                summary={summary}
-                githublink={githublink}
-                weblin={weblink}
-                tags={tags}
-              />
-            </Grid>
-          )
-        )}
+        {data.allProjectsJson.edges.map(({ node }) => (
+          <Grid
+            item
+            key={node.title}
+            md={4}
+            xs={12}
+            className={classes.skillsStyle}
+          >
+            <ProjectsContainer
+              title={node.title}
+              icon={node.icon.publicURL}
+              summary={node.summary}
+              githublink={node.githublink}
+              weblin={node.weblink}
+              tags={node.tags}
+            />
+          </Grid>
+        ))}
       </Grid>
     </section>
   );

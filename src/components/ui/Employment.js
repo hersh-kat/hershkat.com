@@ -12,15 +12,6 @@ import WorkIcon from "@material-ui/icons/Work";
 import ScrollableAnchor from "react-scrollable-anchor";
 import { graphql, useStaticQuery } from "gatsby";
 
-import {
-  kcsoc,
-  creditSights,
-  justEat,
-  healthShared,
-  thinkOutLoud,
-  exploreLearning,
-} from "../../data/employmentData";
-
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
   return (
