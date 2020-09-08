@@ -4,17 +4,16 @@ import { makeStyles } from "@material-ui/core/styles";
 import Tabs from "@material-ui/core/Tabs";
 import Tab from "@material-ui/core/Tab";
 import TabsContentHolder from "./TabsContentHolder";
-import { uniData, aLevelData, gcseData } from "../../data/educationData";
 import Typography from "@material-ui/core/Typography";
 import Grid from "@material-ui/core/Grid";
 import useMediaQuery from "@material-ui/core/useMediaQuery";
 import { useTheme } from "@material-ui/core/styles";
 import SchoolIcon from "@material-ui/icons/School";
 import ScrollableAnchor from "react-scrollable-anchor";
+import { graphql, useStaticQuery } from "gatsby";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
-
   return (
     <Grid
       item
@@ -94,6 +93,28 @@ export default function VerticalTabs() {
     setValue(newValue);
   };
 
+  const data = useStaticQuery(graphql`
+    {
+      allEducationJson {
+        edges {
+          node {
+            id
+            tabName
+            logo {
+              publicURL
+            }
+            title
+            subtitle1
+            subtitle2
+            resultsName
+            results
+          }
+        }
+      }
+    }
+  `);
+
+  //console.log(data.allEducationJson.edges);
   return (
     <section className={classes.sectionStyle}>
       <ScrollableAnchor id={"education"}>
@@ -125,21 +146,23 @@ export default function VerticalTabs() {
             aria-label="Vertical tabs example"
             className={classes.tabs}
           >
-            <Tab label="University" {...a11yProps(0)} />
-            <Tab label="A-Level" {...a11yProps(1)} />
-            <Tab label="GCSE" {...a11yProps(2)} />
+            {data.allEducationJson.edges.map(({ node }, index) => (
+              <Tab label={node.tabName} key={index} {...a11yProps(0)} />
+            ))}
           </Tabs>
         </Grid>
         <Grid item xs>
-          <TabPanel value={value} index={0}>
-            <TabsContentHolder {...uniData} columns />
-          </TabPanel>
-          <TabPanel value={value} index={1}>
-            <TabsContentHolder {...aLevelData} columns />
-          </TabPanel>
-          <TabPanel value={value} index={2}>
-            <TabsContentHolder {...gcseData} columns />
-          </TabPanel>
+          {data.allEducationJson.edges.map(({ node }, index) => (
+            <TabPanel key={index} value={value} index={index}>
+              <TabsContentHolder
+                {...node}
+                gatsbyImageComponent={
+                  <img src={node.logo.publicURL} style={{ margin: "auto" }} />
+                }
+                columns
+              />
+            </TabPanel>
+          ))}
         </Grid>
       </Grid>
     </section>

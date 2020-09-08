@@ -12,6 +12,8 @@ module.exports = {
     description: `Welcome to my home on the internet, where you can get to know who I am and what I do!`,
   },
   plugins: [
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
@@ -33,6 +35,13 @@ module.exports = {
       options: {
         name: `data`,
         path: `src/data/`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `assets`,
+        path: `src/assets/`,
       },
     },
   ],

@@ -38,6 +38,7 @@ export default function EducationContentHolder({
   resultsName,
   results,
   columns,
+  gatsbyImageComponent,
 }) {
   const classes = useStyles();
 
@@ -50,9 +51,7 @@ export default function EducationContentHolder({
         alignItems="center"
         style={{ paddingBottom: "10px" }}
       >
-        <Grid item>
-          <img alt="company logo" style={{ margin: "auto" }} src={logo} />
-        </Grid>
+        <Grid item>{gatsbyImageComponent}</Grid>
         <Grid item container direction="column" xs>
           <Grid item>
             <Typography variant="h3">{title}</Typography>
@@ -76,18 +75,24 @@ export default function EducationContentHolder({
           <ul className={columns ? classes.ulColumns : classes.ul}>
             {results &&
               columns &&
-              Object.entries(results).map(([key, value]) => (
-                <li className={classes.li} key={key}>
-                  {key}: {value}
-                </li>
-              ))}
+              results.map((string) => {
+                const res = string.split(",");
+                return (
+                  <li className={classes.li} key={res[0]}>
+                    {res[0]}: {res[1]}
+                  </li>
+                );
+              })}
             {results &&
               !columns &&
-              Object.entries(results).map(([key, value]) => (
-                <li className={classes.li} key={key}>
-                  {value}
-                </li>
-              ))}
+              results.map((string) => {
+                const res = string.split(",");
+                return (
+                  <li className={classes.li} key={res[0]}>
+                    {res[0]}: {res[1]}
+                  </li>
+                );
+              })}
           </ul>
         </Grid>
       </Grid>
