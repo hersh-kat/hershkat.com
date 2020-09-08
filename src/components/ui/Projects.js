@@ -4,7 +4,6 @@ import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import ProjectsContainer from "./ProjectContainer";
-import { projectsData } from "../../data/projectsData";
 import useMediaQuery from "@material-ui/core/useMediaQuery";
 import { useTheme } from "@material-ui/styles";
 import ScrollableAnchor from "react-scrollable-anchor";
