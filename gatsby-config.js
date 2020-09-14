@@ -16,6 +16,18 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-plugin-material-ui`,
     {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Hersh Kataria's Personal Website`,
+        short_name: `HershKat`,
+        start_url: `/`,
+        background_color: `#0a192f`,
+        theme_color: `#4becff`,
+        icon: `src/assets/icon.svg`,
+        display: `standalone`,
+      },
+    },
+    {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [`Fira Sans:300,400,500,600,700`, `Fira Code:300,400,500`],
