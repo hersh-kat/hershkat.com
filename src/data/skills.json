@@ -1,8 +1,8 @@
 [
   {
-    "icon": "../assets/webdev.svg",
-    "title": "Web Development",
-    "skills": ["HTML5", "JavaScript ES6+", "CSS"]
+    "icon": "../assets/java.svg",
+    "title": "Core Languages",
+    "skills": ["Java", "Python", "JavaScript ES6+"]
   },
 
   {
@@ -14,19 +14,19 @@
   {
     "icon": "../assets/nodejs.svg",
     "title": "Back-End Technologies",
-    "skills": ["Node.js", "SQL", "PHP"]
+    "skills": ["Node.js", "GraphQL", "SQL"]
   },
 
   {
-    "icon": "../assets/java.svg",
-    "title": "Core Languages",
-    "skills": ["Java", "Python", "JavaScript"]
+    "icon": "../assets/webdev.svg",
+    "title": "Web Development",
+    "skills": ["HTML5", "JavaScript ES6+", "CSS3"]
   },
 
   {
-    "icon": "../assets/googleanalytics.svg",
-    "title": "Business",
-    "skills": ["Facebook Ads", "Google Analytics"]
+    "icon": "../assets/xcode.svg",
+    "title": "Mobile App Development",
+    "skills": ["React Native", "XCode"]
   },
 
   {
