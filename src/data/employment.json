@@ -1,18 +1,18 @@
 [
   {
-    "logo": "../assets/freestyle.svg",
-    "title": "Freestyle Cuts",
-    "subtitle1": "Software Engineer (Part Time)",
-    "subtitle2": "July 2020 - Present",
+    "logo": "../assets/bloomberg.svg",
+    "title": "Bloomberg LP",
+    "subtitle1": "Software Engineer (Full-Time)",
+    "subtitle2": "Nov 2021 - Present",
     "results": [
-      "Developing a mobile app, using React Native and Sails.js, for a hair and beauty startup with over 500 monthly active users.",
-      "Implementing features that will manage operations and interact with IoT devices in a semi-automated hair salon. "
+      "Working as part of the ESG Regulations team to ingest, calculate and display ESG data to over 350,000 clients.",
+      "Using TypeScript and Python to develop a full-stack application that calculates how aligned a company is with sustainability regulations set out by the European Commission in the EU Taxonomy."
     ]
   },
   {
     "logo": "../assets/kcsoclogo.svg",
     "title": "National KCSOC",
-    "subtitle1": "National President (Full-Time Volunteer)",
+    "subtitle1": "National President (Full Time Volunteer)",
     "subtitle2": "Aug 2019 - Jul 2020",
     "results": [
       "Led a team of 10 to create a network offering spiritual wellbeing and life coaching to over 800 students across 30 universities.",
@@ -24,7 +24,7 @@
   {
     "logo": "../assets/creditsightslogo.svg",
     "title": "CreditSights",
-    "subtitle1": "Software Engineer (Full Time)",
+    "subtitle1": "Software Engineer (Full-Time)",
     "subtitle2": "Aug 2018 - Sept 2018",
     "results": [
       "Used Python, Flask and Dash to develop a bespoke data visualisation web app that displayed company revenue information.",
