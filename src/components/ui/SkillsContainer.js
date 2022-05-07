@@ -6,7 +6,7 @@ import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    width: "350px",
+    width: "380px",
     animationName: "fadeIn",
     animationDelay: "0.1s",
     color: "rgb(221,221,221)",
@@ -56,7 +56,12 @@ export default function SkillsContainer({ icon, title, skills }) {
         <Grid item container direction="row" spacing={1}>
           {skills.map((skill) => (
             <Grid key={skill} item>
-              <Chip variant="outlined" className={classes.chip} label={skill} />
+              <Chip
+                size="small"
+                variant="outlined"
+                className={classes.chip}
+                label={skill}
+              />
             </Grid>
           ))}
         </Grid>
