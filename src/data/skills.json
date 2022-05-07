@@ -1,26 +1,26 @@
 [
   {
-    "icon": "../assets/java.svg",
-    "title": "Core Languages",
-    "skills": ["Java", "Python", "JavaScript ES6+"]
+    "icon": "../assets/python.svg",
+    "title": "Back-End Languages",
+    "skills": ["Python", "Java", "C++", "C"]
   },
 
   {
     "icon": "../assets/react.svg",
-    "title": "Front-End Frameworks",
-    "skills": ["React.js", "Vue.js", "Material-UI"]
-  },
-
-  {
-    "icon": "../assets/nodejs.svg",
-    "title": "Back-End Technologies",
-    "skills": ["Node.js", "GraphQL", "SQL"]
+    "title": "Front-End Technologies",
+    "skills": ["JavaScript ES6+", "TypeScript", "React.js"]
   },
 
   {
     "icon": "../assets/webdev.svg",
-    "title": "Web Development",
-    "skills": ["HTML5", "JavaScript ES6+", "CSS3"]
+    "title": "Web Technologies",
+    "skills": ["HTML5/CSS3", "Gatsby", "Node.js", "PHP"]
+  },
+
+  {
+    "icon": "../assets/graphql.svg",
+    "title": "Data Technologies",
+    "skills": ["GraphQL", "SQL", "NoSQL"]
   },
 
   {
