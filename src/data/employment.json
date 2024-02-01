@@ -3,10 +3,12 @@
     "logo": "../assets/bloomberg.svg",
     "title": "Bloomberg LP",
     "subtitle1": "Software Engineer (Full-Time)",
-    "subtitle2": "Nov 2021 - Present",
+    "subtitle2": "Nov 2021 - Dec 2022",
     "results": [
       "Working as part of the ESG Regulations team to ingest, calculate and display ESG data to over 350,000 clients.",
-      "Using TypeScript and Python to develop a full-stack application that calculates how aligned a company is with sustainability regulations set out by the European Commission in the EU Taxonomy."
+      "Used TypeScript, Python and C++ to develop a full-stack application that calculates how aligned a company is with sustainability regulations set out by the European Commission in the EU Taxonomy.",
+      "Developed a comprehensive suite of unit, integration and system tests using PyTest and gMock. Ensured 100% code coverage.",
+      "Spearheaded the creation of the team's technical documentation, leveraging GitHub Pages coupled with a CI/CD Jenkins pipeline for automated publishing. This initiative significantly expedited onboarding for new team members."
     ]
   },
   {
