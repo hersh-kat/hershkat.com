@@ -57,7 +57,7 @@ export default function AboutMe() {
                 I’m Hersh, a Software Engineer based in London with a passion
                 for everything tech. I’ve had experience working in various tech
                 companies, including Bloomberg LP. I also used to live as a monk
-                in a monesteray, where I spent my time meditating, teaching
+                in a monastery, where I spent my time meditating, teaching
                 others and connecting with people from all walks of life. I’m
                 not your typical engineer, that's for sure!
                 <br />
