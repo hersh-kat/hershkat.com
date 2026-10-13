@@ -55,11 +55,11 @@ export default function AboutMe() {
                 <br />
                 <br />
                 I’m Hersh, a Software Engineer based in London with a passion
-                for everything tech. I’ve had experience working in various tech
-                companies, including Bloomberg LP. I also used to live as a monk
-                in a monastery, where I spent my time meditating, teaching
-                others and connecting with people from all walks of life. I’m
-                not your typical engineer, that's for sure!
+                for everything tech. I’m currently a Senior Software Engineer at
+                HubSpot, and previously worked at Bloomberg LP. I also used to
+                live as a monk in a monastery, where I spent my time meditating,
+                teaching others and connecting with people from all walks of
+                life. I’m not your typical engineer, that's for sure!
                 <br />
                 <br />I created this website to showcase my experience, skills
                 and various technical projects. If you’d like to get in touch
