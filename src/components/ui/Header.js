@@ -17,7 +17,6 @@ import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 import ListItemText from "@material-ui/core/ListItemText";
 import { configureAnchors } from "react-scrollable-anchor";
-import pdf from "../../assets/cv.pdf";
 
 function HideOnScroll(props) {
   const { children } = props;
@@ -75,17 +74,6 @@ export default function Header(props) {
   const [openDrawer, setOpenDrawer] = useState(false);
   configureAnchors({ offset: -theme.mixins.toolbar.minHeight - 10 });
 
-  const cvButton = (
-    <Button
-      href={pdf}
-      className={classes.button}
-      variant="outlined"
-      color="secondary"
-    >
-      CV
-    </Button>
-  );
-
   const drawer = (
     <React.Fragment>
       <SwipeableDrawer
@@ -109,7 +97,6 @@ export default function Header(props) {
               <ListItemText disableTypography>{page}</ListItemText>
             </ListItem>
           ))}
-          {cvButton}
         </List>
       </SwipeableDrawer>
       <IconButton
@@ -144,7 +131,6 @@ export default function Header(props) {
           </Link>
         ))}
       </Breadcrumbs>
-      {cvButton}
     </React.Fragment>
   );
 
