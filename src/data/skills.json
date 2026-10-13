@@ -2,36 +2,70 @@
   {
     "icon": "../assets/python.svg",
     "title": "Back-End Languages",
-    "skills": ["Python", "Java", "C++", "C"]
+    "skills": [
+      "Python",
+      "Java",
+      "C++",
+      "C"
+    ]
   },
-
   {
     "icon": "../assets/react.svg",
     "title": "Front-End Technologies",
-    "skills": ["JavaScript ES6+", "TypeScript", "React.js"]
+    "skills": [
+      "JavaScript ES6+",
+      "TypeScript",
+      "React.js",
+      "Next.js",
+      "Redux",
+      "Tailwind CSS"
+    ]
   },
-
   {
     "icon": "../assets/webdev.svg",
     "title": "Web Technologies",
-    "skills": ["HTML5/CSS3", "Gatsby", "Node.js", "PHP"]
+    "skills": [
+      "HTML5/CSS3",
+      "Gatsby",
+      "Node.js",
+      "PHP"
+    ]
   },
-
   {
     "icon": "../assets/graphql.svg",
     "title": "Data Technologies",
-    "skills": ["GraphQL", "SQL", "NoSQL"]
+    "skills": [
+      "GraphQL",
+      "SQL",
+      "PostgreSQL",
+      "NoSQL"
+    ]
   },
-
+  {
+    "icon": "../assets/nodejs.svg",
+    "title": "Tools & AI",
+    "skills": [
+      "Git",
+      "Docker",
+      "Bash",
+      "Claude Code"
+    ]
+  },
   {
     "icon": "../assets/xcode.svg",
     "title": "Mobile App Development",
-    "skills": ["React Native", "XCode"]
+    "skills": [
+      "React Native",
+      "XCode"
+    ]
   },
-
   {
     "icon": "../assets/photoshop.svg",
     "title": "Graphic Design & Video",
-    "skills": ["Adobe Photoshop", "Final Cut Pro"]
+    "skills": [
+      "Figma",
+      "Adobe Photoshop",
+      "Final Cut Pro"
+    ]
   }
 ]

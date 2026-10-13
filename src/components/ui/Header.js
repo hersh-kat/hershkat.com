@@ -66,7 +66,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 export default function Header(props) {
-  const pageNames = ["About", "Education", "Work", "Skills", "Projects"];
+  const pageNames = ["About", "Work", "Projects", "Skills", "Education"];
   const classes = useStyles();
   const theme = useTheme();
   const matches = useMediaQuery(theme.breakpoints.down("sm"));

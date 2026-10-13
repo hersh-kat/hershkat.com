@@ -18,10 +18,10 @@ function App() {
       <MainContainer>
         <Hero />
         <AboutMe />
-        <Education />
         <Employment />
-        <Skills />
         <Projects />
+        <Skills />
+        <Education />
         <Footer />
       </MainContainer>
     </ThemeProvider>

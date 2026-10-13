@@ -46,10 +46,10 @@ const useStyles = makeStyles((theme) => ({
   root: {
     display: "flex",
     flexGrow: 1,
-    height: "370px",
+    minHeight: "370px",
     margin: "auto",
     [theme.breakpoints.down("sm")]: {
-      height: "auto",
+      minHeight: "auto",
     },
   },
   sectionStyle: {

@@ -1,5 +1,17 @@
 [
   {
+    "logo": "../assets/hubspot.svg",
+    "title": "HubSpot",
+    "subtitle1": "Senior Software Engineer",
+    "subtitle2": "Sep 2024 - Present",
+    "results": [
+      "Full-stack engineer in HubSpot's Scale Marketing product line, building AI-powered campaign creation features. Specialise in React and TypeScript, and work across the stack, including Java on the backend. Promoted to Senior Software Engineer in Aug 2026.",
+      "Built Asset Upgrade Paths, an in-product upsell flow and the first of its kind for Marketing Hub campaigns. Assets outside a customer's plan now appear locked with a direct route to upgrade. Added Looker tracking and an attribution dashboard, and in 2025 it drove $114K in annual recurring revenue with a 26% click-to-sale rate.",
+      "Led Clone with AI, a high-priority roadmap feature in Marketing Studio that lets users duplicate a campaign and have AI adapt its content to their instructions. As project lead and sole frontend engineer, owned it end to end, from planning and architecture through analytics and release. Users kept 98% of AI-suggested changes, indicating high trust in the AI's output.",
+      "Built MCP (Model Context Protocol) tools from scratch in Java at a company hackathon. This became a working skill for Breeze Assistant, HubSpot's AI assistant, turning customer Slack conversations into structured campaign briefs enriched with SEMrush, Google Trends and live news data."
+    ]
+  },
+  {
     "logo": "../assets/manor.svg",
     "title": "Bhaktivedanta Manor",
     "subtitle1": "Resident Monk - Planned Career Break",
