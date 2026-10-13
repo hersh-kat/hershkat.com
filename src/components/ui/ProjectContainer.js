@@ -2,7 +2,7 @@ import React from "react";
 import Typography from "@material-ui/core/Typography";
 import Grid from "@material-ui/core/Grid";
 import Chip from "@material-ui/core/Chip";
-import Link from "@material-ui/core/Link";
+import Button from "@material-ui/core/Button";
 import { makeStyles } from "@material-ui/core/styles";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import LaunchIcon from "@material-ui/icons/Launch";
@@ -10,7 +10,7 @@ import LaunchIcon from "@material-ui/icons/Launch";
 const useStyles = makeStyles((theme) => ({
   root: {
     width: "400px",
-    height: "300px",
+    height: "350px",
     animationName: "fadeIn",
     animationDelay: "0.1s",
     color: "rgb(221,221,221)",
@@ -38,9 +38,14 @@ const useStyles = makeStyles((theme) => ({
     color: theme.palette.secondary.main,
     border: `1px solid ${theme.palette.secondary.main}`,
   },
-  linkHover: {
-    color: "white",
-    ...theme.textLinkTransition,
+  secondaryButton: {
+    color: "rgb(160,170,185)",
+    border: "1px solid rgba(160,170,185,0.4)",
+    "&:hover": {
+      color: "white",
+      borderColor: "rgba(255,255,255,0.6)",
+      backgroundColor: "rgba(255,255,255,0.08)",
+    },
   },
 }));
 
@@ -59,18 +64,6 @@ export default function ProjectContainer({
       <Grid item container direction="row" className="row1">
         <Grid item>
           <img alt="Project icon" src={icon} />
-        </Grid>
-        <Grid item container xs direction="row" spacing={2} justify="flex-end">
-          <Grid hidden={githublink ? false : true} item>
-            <Link className={classes.linkHover} href={githublink}>
-              <GitHubIcon />
-            </Link>
-          </Grid>
-          <Grid hidden={weblink ? false : true} item>
-            <Link className={classes.linkHover} href={weblink}>
-              <LaunchIcon />
-            </Link>
-          </Grid>
         </Grid>
       </Grid>
       <Grid item container direction="column" spacing={1}>
@@ -95,6 +88,40 @@ export default function ProjectContainer({
             </Grid>
           ))}
       </Grid>
+      {(weblink || githublink) && (
+        <Grid item container direction="row" spacing={2}>
+          {weblink && (
+            <Grid item>
+              <Button
+                variant="outlined"
+                color="secondary"
+                size="small"
+                href={weblink}
+                target="_blank"
+                rel="noopener noreferrer"
+                endIcon={<LaunchIcon />}
+              >
+                Visit website
+              </Button>
+            </Grid>
+          )}
+          {githublink && (
+            <Grid item>
+              <Button
+                variant="outlined"
+                size="small"
+                className={classes.secondaryButton}
+                href={githublink}
+                target="_blank"
+                rel="noopener noreferrer"
+                startIcon={<GitHubIcon />}
+              >
+                View GitHub
+              </Button>
+            </Grid>
+          )}
+        </Grid>
+      )}
     </Grid>
   );
 }

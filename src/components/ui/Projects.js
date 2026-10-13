@@ -41,6 +41,7 @@ export default function Projects() {
             summary
             tags
             githublink
+            weblink
           }
         }
       }
@@ -81,7 +82,7 @@ export default function Projects() {
               icon={node.icon.publicURL}
               summary={node.summary}
               githublink={node.githublink}
-              weblin={node.weblink}
+              weblink={node.weblink}
               tags={node.tags}
             />
           </Grid>

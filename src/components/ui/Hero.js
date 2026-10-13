@@ -6,10 +6,8 @@ import Grid from "@material-ui/core/Grid";
 import me from "../../assets/me.svg";
 import nameImage from "../../assets/HershKataria.svg";
 import GithubIcon from "../../assets/github";
-import InstagramIcon from "../../assets/instagram";
 import LinkedInIcon from "../../assets/linkedin";
 import PhotoshopIcon from "../../assets/photoshop";
-import SpotifyIcon from "../../assets/spotify";
 import ScrollableAnchor from "react-scrollable-anchor";
 import TypeAnimation from "../TypeAnimation";
 import ArrowDropDownCircleOutlinedIcon from "@material-ui/icons/ArrowDropDownCircleOutlined";
@@ -48,22 +46,17 @@ const useStyles = makeStyles((theme) => ({
       display: "block",
     },
   },
-  spotifyIcon: {
-    color: "#1ED760",
-    ...theme.iconLinkTransition,
-  },
   githubIcon: {
-    ...theme.iconLinkTransition,
-  },
-  instagramIcon: {
-    color: "#E4405F",
+    fontSize: "2.2rem",
     ...theme.iconLinkTransition,
   },
   photoshopIcon: {
+    fontSize: "2.2rem",
     color: "#31A8FF",
     ...theme.iconLinkTransition,
   },
   linkedinIcon: {
+    fontSize: "2.2rem",
     color: "#0077B5",
     ...theme.iconLinkTransition,
   },
@@ -164,6 +157,12 @@ export default function Hero() {
               </Grid>
               <Grid
                 item
+                onClick={() => window.open("https://bit.ly/hershlinkedin")}
+              >
+                <LinkedInIcon className={classes.linkedinIcon} />
+              </Grid>
+              <Grid
+                item
                 onClick={() =>
                   window.open(
                     "https://drive.google.com/drive/u/0/folders/1WxsdRD-v_xLnVuL5CEceTiIoFuW6Fl1r"
@@ -171,24 +170,6 @@ export default function Hero() {
                 }
               >
                 <PhotoshopIcon className={classes.photoshopIcon} />
-              </Grid>
-              <Grid
-                item
-                onClick={() => window.open("https://bit.ly/hershlinkedin")}
-              >
-                <LinkedInIcon className={classes.linkedinIcon} />
-              </Grid>
-              <Grid
-                item
-                onClick={() => window.open("https://bit.ly/hershinsta")}
-              >
-                <InstagramIcon className={classes.instagramIcon} />
-              </Grid>
-              <Grid
-                item
-                onClick={() => window.open("https://bit.ly/hershkcsoc")}
-              >
-                <SpotifyIcon className={classes.spotifyIcon} />
               </Grid>
             </Grid>
           </Grid>
