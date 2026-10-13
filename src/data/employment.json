@@ -1,42 +1,53 @@
 [
   {
+    "logo": "../assets/manor.svg",
+    "title": "Bhaktivedanta Manor",
+    "subtitle1": "Resident Monk - Planned Career Break",
+    "subtitle2": "Jan 2023 - Feb 2024",
+    "results": [
+      "Served as a full-time resident monk, in affiliation with an educational charity dedicated to fostering spiritual well-being.",
+      "Engaged in street fundraising activities, akin to a sales role, by promoting meditation books to passers-by. Ranked 1st in Europe, amongst 4000+ participants for the December campaign, single-handedly selling 6000 books and raising £12,000 in 31 days.",
+      "Delivered impactful seminars on wellbeing, mindfulness and philosophy at establishments such as the University of Cambridge."
+    ]
+  },
+  {
     "logo": "../assets/bloomberg.svg",
     "title": "Bloomberg LP",
-    "subtitle1": "Software Engineer (Full-Time)",
+    "subtitle1": "Software Engineer",
     "subtitle2": "Nov 2021 - Dec 2022",
     "results": [
-      "Working as part of the ESG Regulations team to ingest, calculate and display ESG data to over 350,000 clients.",
-      "Used TypeScript, Python and C++ to develop a full-stack application that calculates how aligned a company is with sustainability regulations set out by the European Commission in the EU Taxonomy.",
+      "Worked in a team of 5 to develop a greenfield, full-stack application using TypeScript and Python. Contributed to the implementation of a rules engine that ingested public company data and calculated ESG indices.",
+      "Identified and rectified algorithmic errors in a C++ codebase which calculated green revenue metrics using a tree-traversal algorithm. Individually fixed miscalculations that affected 12% of all companies under evaluation.",
       "Developed a comprehensive suite of unit, integration and system tests using PyTest and gMock. Ensured 100% code coverage.",
       "Spearheaded the creation of the team's technical documentation, leveraging GitHub Pages coupled with a CI/CD Jenkins pipeline for automated publishing. This initiative significantly expedited onboarding for new team members."
     ]
   },
   {
-    "logo": "../assets/kcsoclogo.svg",
-    "title": "National KCSOC",
-    "subtitle1": "National President (Full Time Volunteer)",
+    "logo": "../assets/ast.svg",
+    "title": "Avanti Schools Trust",
+    "subtitle1": "Software Engineer and Project Leader",
     "subtitle2": "Aug 2019 - Jul 2020",
     "results": [
       "Led a team of 10 to create a network offering spiritual wellbeing and life coaching to over 800 students across 30 universities.",
-      "Used React, HTML5, CSS3 and RESTful APIs to develop a web application. See KCSOC Studio below for more details.",
-      "Created a new brand of nationwide, university wellbeing retreats by developing a fully functioning e-commerce website, which generated a revenue of £7000 in the first 6 months.",
+      "Used React, HTML5, CSS3 and RESTful APIs to develop a bespoke web app. See KCSOC Studio below for more details.",
+      "reated a brand for nationwide, university wellbeing retreats by developing an e-commerce website, which generated a revenue of £7000 in the first 6 months.",
       "Used Python and Google Apps Scripts to automate admin tasks, such as data scraping and spreadsheet management."
     ]
   },
   {
     "logo": "../assets/creditsightslogo.svg",
     "title": "CreditSights",
-    "subtitle1": "Software Engineer (Full-Time)",
+    "subtitle1": "Software Engineer",
     "subtitle2": "Aug 2018 - Sept 2018",
     "results": [
-      "Used Python, Flask and Dash to develop a bespoke data visualisation web app that displayed company revenue information.",
-      "Processed data from spreadsheets using Pandas displayed the data on interactive graphs using Plot.ly. Proved much faster than creating graphs manually in Excel and saved 10 hours each week."
+      "Used Python and Dash to develop a bespoke data visualisation web app that displayed company revenue information.",
+      "Ingested data from spreadsheets using Pandas and displayed the data on interactive Plot.ly graphs, saving 10 hours per week compared to manual alternatives."
     ]
   },
   {
     "logo": "../assets/healthsharedlogo.svg",
     "title": "Health Shared",
-    "subtitle1": "Software Engineer (Internship)",
+    "subtitle1": "Software Engineer Intern",
     "subtitle2": "Jun 2018 - Jul 2018",
     "results": [
       "Collaborated with a team of developers in a healthcare start-up to implement a responsive web app.",
@@ -46,7 +57,7 @@
   {
     "logo": "../assets/justeatlogo.svg",
     "title": "Just Eat",
-    "subtitle1": "Customer Service Advisor (Full-Time)",
+    "subtitle1": "Customer Service Advisor",
     "subtitle2": "Aug 2017",
     "results": [
       "Provided customer service support for restaurant/delivery partners via phone, live web-chat and email.",
@@ -66,7 +77,7 @@
   {
     "logo": "../assets/explorelearning.svg",
     "title": "Explore Learning",
-    "subtitle1": "Maths, English & 11+ Tutor (Part-Time)",
+    "subtitle1": "Maths, English & 11+ Tutor",
     "subtitle2": "Oct 2014 - Jul 2016",
     "results": [
       "Full ownership of the 11+ course, providing specialist support to children taking the 11+ Exams. This involved lesson planning, teaching groups of 30 children, marking work and providing individual feedback to parents."

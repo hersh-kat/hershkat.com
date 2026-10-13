@@ -150,7 +150,7 @@ export default function Hero() {
               <Typography className={classes.typeAnimationStyle}>
                 <TypeAnimation
                   strings={[
-                    "Developer. ^1000 Designer.\n^1000Speaker. ^1000 Self-Starter.",
+                    "Engineer. ^1000 Speaker.\n^1000Designer. ^1000 Self-Starter.",
                   ]}
                 />
               </Typography>
