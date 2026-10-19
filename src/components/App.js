@@ -10,6 +10,7 @@ import Footer from "./ui/Footer";
 import theme from "./ui/Theme";
 import Skills from "./ui/Skills";
 import Projects from "./ui/Projects";
+import Speaking from "./ui/Speaking";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <AboutMe />
         <Employment />
         <Projects />
+        <Speaking />
         <Skills />
         <Education />
         <Footer />

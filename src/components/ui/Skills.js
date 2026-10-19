@@ -59,7 +59,7 @@ export default function Skills() {
             <CodeIcon fontSize="small" />
           </Grid>
           <Grid item>
-            <Typography variant="h2">Skills</Typography>
+            <Typography variant="h2">Technical Skills</Typography>
           </Grid>
         </Grid>
       </ScrollableAnchor>

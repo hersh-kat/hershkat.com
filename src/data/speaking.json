@@ -1,0 +1,36 @@
+[
+  {
+    "title": "TEDxWatford",
+    "role": "Host & Core Organiser",
+    "meta": "Bhaktivedanta Manor, Watford · 18 July 2026",
+    "summary": [
+      "Hosted the first-ever TEDxWatford, and was part of the core organising team that brought it to life.",
+      "Over 300 guests gathered at Bhaktivedanta Manor for five hours of talks, storytelling, dinner and live music around the theme 'All You Need Is Love'. Nine speakers explored love through relationships, technology, health, sport, storytelling, family and spiritual practice."
+    ],
+    "images": [
+      "../assets/speaking/tedxwatford-host.jpg",
+      "../assets/speaking/tedxwatford-team.jpg"
+    ],
+    "links": [
+      {
+        "label": "Read the article",
+        "url": "https://www.krishnatemple.com/bhaktivedanta-manor-hosts-first-tedxwatford/"
+      }
+    ]
+  },
+  {
+    "title": "LSEG (London Stock Exchange Group)",
+    "role": "Interviewer & Panel Facilitator",
+    "meta": "Johannesburg office, joined virtually by colleagues across Africa and the Middle East · May 2025",
+    "summary": [
+      "Interviewed S.B. Keshava Swami, a globally respected monk, author and speaker, on relationships, purpose, success and living with intention.",
+      "Facilitated the discussion and audience Q&A for 130+ colleagues, with many joining virtually from Cape Town, Nairobi, Dubai and other regions."
+    ],
+    "quote": "Hersh Kataria expertly facilitated the panel discussion.",
+    "quoteBy": "Manoj Dullabh, VP Electronic Sales at Absa Group",
+    "images": [
+      "../assets/speaking/lseg-interview.jpg",
+      "../assets/speaking/lseg-group.jpg"
+    ]
+  }
+]
