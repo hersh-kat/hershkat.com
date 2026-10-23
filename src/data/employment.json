@@ -1,25 +1,39 @@
 [
   {
     "logo": "../assets/hubspot.svg",
+    "tabName": "HubSpot (Senior)",
     "title": "HubSpot",
     "subtitle1": "Senior Software Engineer",
-    "subtitle2": "Sep 2024 - Present",
+    "subtitle2": "Aug 2026 - Present",
     "results": [
-      "Full-stack engineer in HubSpot's Scale Marketing product line, building AI-powered campaign creation features. Specialise in React and TypeScript, and work across the stack, including Java on the backend. Promoted to Senior Software Engineer in Aug 2026.",
-      "Built Asset Upgrade Paths, an in-product upsell flow and the first of its kind for Marketing Hub campaigns. Assets outside a customer's plan now appear locked with a direct route to upgrade. Added Looker tracking and an attribution dashboard, and in 2025 it drove $114K in annual recurring revenue with a 26% click-to-sale rate.",
-      "Led Clone with AI, a high-priority roadmap feature in Marketing Studio that lets users duplicate a campaign and have AI adapt its content to their instructions. As project lead and sole frontend engineer, owned it end to end, from planning and architecture through analytics and release. Users kept 98% of AI-suggested changes, indicating high trust in the AI's output.",
-      "Built MCP (Model Context Protocol) tools from scratch in Java at a company hackathon. This became a working skill for Breeze Assistant, HubSpot's AI assistant, turning customer Slack conversations into structured campaign briefs enriched with SEMrush, Google Trends and live news data."
+      "Full-stack engineer (TypeScript, React, Redux, Java) building AI-powered campaign creation features for HubSpot’s marketing platform, serving 7.1M users.",
+      "Led delivery of a high-priority AI campaign-duplication feature, where users clone a campaign and an LLM adapts its content to their instructions. As project lead and sole frontend engineer, owned planning, architecture, analytics and release. Users accepted 98% of AI-generated edits, a strong signal of output quality.",
+      "Built a set of MCP (Model Context Protocol) tools in Java that let HubSpot’s AI assistant list, inspect and save campaign templates through chat, replacing a manual drag-and-drop workflow.",
+      "Took a hackathon prototype to a shipped AI agent that turns a Slack brainstorm into a ready-made HubSpot campaign, orchestrating Slack retrieval with live SEMrush and news research."
+    ]
+  },
+  {
+    "logo": "../assets/hubspot.svg",
+    "tabName": "HubSpot (SWE)",
+    "title": "HubSpot",
+    "subtitle1": "Software Engineer",
+    "subtitle2": "Sep 2024 - Aug 2026",
+    "results": [
+      "Drove $114K in new annual recurring revenue in 2025 by building the product’s first in-app upsell flow, surfacing locked premium features at the point of need with a direct upgrade path. Instrumented the funnel with Looker tracking and an attribution dashboard that measured a 26% click-to-purchase conversion rate.",
+      "Led the frontend rearchitecture of campaign cloning, reducing a five-layer, cross-team iframe dependency chain to a reusable native component library and cutting median pull-request turnaround by 73%, from roughly 26 hours to 7 hours.",
+      "Modernised the shared frontend component library powering HubSpot’s marketing campaign tools, migrating 10 UI components to a new design system and updating 5 dependent applications to standardise campaign-creation experiences."
     ]
   },
   {
     "logo": "../assets/manor.svg",
     "title": "Bhaktivedanta Manor",
     "subtitle1": "Resident Monk - Planned Career Break",
-    "subtitle2": "Jan 2023 - Feb 2024",
+    "subtitle2": "Jan 2023 - Sep 2024",
     "results": [
-      "Served as a full-time resident monk, in affiliation with an educational charity dedicated to fostering spiritual well-being.",
-      "Engaged in street fundraising activities, akin to a sales role, by promoting meditation books to passers-by. Ranked 1st in Europe, amongst 4000+ participants for the December campaign, single-handedly selling 6000 books and raising £12,000 in 31 days.",
-      "Delivered impactful seminars on wellbeing, mindfulness and philosophy at establishments such as the University of Cambridge."
+      "Served as a full-time resident monk for 13 months, in affiliation with an educational charity focused on wellbeing.",
+      "Ranked 1st in Europe out of 4,000+ fundraisers in the December campaign, personally selling 6,000 meditation books and raising £12,000 in 31 days of street fundraising.",
+      "Delivered 25 seminars on wellbeing and philosophy to audiences of up to 200, including at the University of Cambridge.",
+      "Returned to engineering in 2024, refreshing full-stack skills in JavaScript, Java and system design through courses and projects."
     ]
   },
   {
@@ -28,10 +42,10 @@
     "subtitle1": "Software Engineer",
     "subtitle2": "Nov 2021 - Dec 2022",
     "results": [
-      "Worked in a team of 5 to develop a greenfield, full-stack application using TypeScript and Python. Contributed to the implementation of a rules engine that ingested public company data and calculated ESG indices.",
-      "Identified and rectified algorithmic errors in a C++ codebase which calculated green revenue metrics using a tree-traversal algorithm. Individually fixed miscalculations that affected 12% of all companies under evaluation.",
-      "Developed a comprehensive suite of unit, integration and system tests using PyTest and gMock. Ensured 100% code coverage.",
-      "Spearheaded the creation of the team's technical documentation, leveraging GitHub Pages coupled with a CI/CD Jenkins pipeline for automated publishing. This initiative significantly expedited onboarding for new team members."
+      "Built the EU Taxonomy screen of the Bloomberg Terminal’s ESG analysis function (TypeScript, Python, Docker), showing company performance on the regulation’s four alignment tests. Contributed to the rules engine scoring alignment for 15,000 companies.",
+      "Rewrote a faulty C++ tree-traversal algorithm calculating green revenue metrics, fixing results for 12% of evaluated companies.",
+      "Developed a suite of unit, integration and system tests using PyTest and gMock, increasing code coverage from 46% to 100%.",
+      "Created the team’s documentation site on GitHub Pages with automated publishing via Jenkins CI/CD."
     ]
   },
   {
@@ -40,20 +54,19 @@
     "subtitle1": "Software Engineer and Project Leader",
     "subtitle2": "Aug 2019 - Jul 2020",
     "results": [
-      "Led a team of 10 to create a network offering spiritual wellbeing and life coaching to over 800 students across 30 universities.",
-      "Used React, HTML5, CSS3 and RESTful APIs to develop a bespoke web app. See KCSOC Studio below for more details.",
-      "reated a brand for nationwide, university wellbeing retreats by developing an e-commerce website, which generated a revenue of £7000 in the first 6 months.",
-      "Used Python and Google Apps Scripts to automate admin tasks, such as data scraping and spreadsheet management."
+      "Led a team of 10 to create a network, offering wellbeing and life coaching to over 800 students across 30 universities.",
+      "Built a self-serve design tool in React that let non-designers create posters and video trailers from templates, used by 40 people weekly and saving the lead designer 15 hours a week.",
+      "Created the brand for a nationwide university wellbeing retreat programme, including its e-commerce website, which generated £7,000 in its first 6 months.",
+      "Used Python and Google Apps Script to automate admin tasks, such as data scraping and spreadsheet management."
     ]
   },
   {
     "logo": "../assets/creditsightslogo.svg",
     "title": "CreditSights",
-    "subtitle1": "Software Engineer",
-    "subtitle2": "Aug 2018 - Sept 2018",
+    "subtitle1": "Software Engineer Intern",
+    "subtitle2": "Aug 2018 - Sep 2018",
     "results": [
-      "Used Python and Dash to develop a bespoke data visualisation web app that displayed company revenue information.",
-      "Ingested data from spreadsheets using Pandas and displayed the data on interactive Plot.ly graphs, saving 10 hours per week compared to manual alternatives."
+      "Built a Python data-visualisation app that turned spreadsheet revenue data into interactive Plotly charts, saving analysts 10 hours per week."
     ]
   },
   {
@@ -62,8 +75,7 @@
     "subtitle1": "Software Engineer Intern",
     "subtitle2": "Jun 2018 - Jul 2018",
     "results": [
-      "Collaborated with a team of developers in a healthcare start-up to implement a responsive web app.",
-      "Built a Java based data pipeline that requested data using the NHS API and updated a Firebase Realtime Database. Used Node.js to implement cloud functions that published user content to an open-access repository."
+      "Built a Java data pipeline pulling from the NHS API into Firebase, plus Node.js cloud functions that published user content to an open-access repository."
     ]
   },
   {

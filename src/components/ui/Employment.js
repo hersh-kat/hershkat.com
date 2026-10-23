@@ -100,6 +100,7 @@ export default function VerticalTabs() {
         edges {
           node {
             id
+            tabName
             logo {
               publicURL
             }
@@ -145,7 +146,11 @@ export default function VerticalTabs() {
             className={classes.tabs}
           >
             {data.allEmploymentJson.edges.map(({ node }, index) => (
-              <Tab label={node.title} key={index} {...a11yProps(0)} />
+              <Tab
+                label={node.tabName || node.title}
+                key={index}
+                {...a11yProps(0)}
+              />
             ))}
           </Tabs>
         </Grid>
